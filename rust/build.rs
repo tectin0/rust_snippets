@@ -1,3 +1,3 @@
 fn main() {
-    cc::Build::new().file("src/ffi.c").compile("ffi");
+    cc::Build::new().file("../c/src/ffi.c").compile("ffi");
 }
