@@ -1,4 +1,4 @@
-// Variables in Rust are defined with the `let` keyword and require an explicit type annotation if it can't be deterministically inferred.
+//! Variables in Rust are defined with the `let` keyword and require an explicit type annotation if it can't be deterministically inferred.
 
 /// Mutability is a property of variables that determines whether they can be changed after they have been defined.
 /// Variables are immutable by default. To make them mutable the `mut` keyword has to be used.

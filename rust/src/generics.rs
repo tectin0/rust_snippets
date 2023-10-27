@@ -1,7 +1,7 @@
-use std::fmt::Formatter;
+//! Generics are a way to loosen the type restrictions of a function or type without losing type safety.
+//!
+//! In addition to `Traits` sharing functionality between types, they are used to define what functionality a generic type has to implement to be used in a generic function or type.
 
-/// Generics are a way to loosen the type restrictions of a function or type without losing type safety.
-/// In addition to `Traits` sharing functionality between types, they are used to define what functionality a generic type has to implement to be used in a generic function or type.
 #[test]
 fn generics() {
     use std::ops::Add; // standard library trait for addition `+`

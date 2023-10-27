@@ -1,11 +1,11 @@
-// Fundamentally, macros are a way of writing code that writes other code, which is known as metaprogramming.
-// A function signature must declare the number and type of parameters the function has. Macros, on the other hand, can take a variable number of parameters
-// Also, macros are expanded before the compiler interprets the meaning of the code, so a macro can, for example, implement a trait on a given type.
-// A function can’t, because it gets called at runtime and a trait needs to be implemented at compile time.
-
-// The downside to implementing a macro instead of a function is that macro definitions are more complex than function definitions.
-
-// Another important difference between macros and functions is that you must define macros or bring them into scope before you call them in a file, as opposed to functions you can define anywhere and call anywhere.
+//! Fundamentally, macros are a way of writing code that writes other code, which is known as metaprogramming.
+//! A function signature must declare the number and type of parameters the function has. Macros, on the other hand, can take a variable number of parameters
+//! Also, macros are expanded before the compiler interprets the meaning of the code, so a macro can, for example, implement a trait on a given type.
+//! A function can’t, because it gets called at runtime and a trait needs to be implemented at compile time.
+//!
+//! The downside to implementing a macro instead of a function is that macro definitions are more complex than function definitions.
+//!
+//! Another important difference between macros and functions is that you must define macros or bring them into scope before you call them in a file, as opposed to functions you can define anywhere and call anywhere.
 
 /// The syntax `macro_rules! name_of_macro` starts the implementation of a macro available by the name `name_of_macro`
 /// and `#[macro_export]` makes this macro available to the entire crate

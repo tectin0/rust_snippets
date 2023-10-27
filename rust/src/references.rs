@@ -1,5 +1,5 @@
-// Rust's entire borrowing model enforces one simple requirement: the contents of a memory location can only be mutated if there is only one pointer through which that location can be accessed.
-// This model enables the compiler to perform aggressive optimisations
+//! Rust's entire borrowing model enforces one simple requirement: the contents of a memory location can only be mutated if there is only one pointer through which that location can be accessed.
+//! This model enables the compiler to perform aggressive optimisations
 
 #[test]
 pub fn reference() {

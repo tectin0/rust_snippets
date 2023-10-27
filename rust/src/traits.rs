@@ -1,7 +1,10 @@
-/// Traits are a way to share functionality between different types.
-/// They are implemented with the `impl` keyword.
-/// They can be implemented for any type.
-/// There are certain rules that have to be followed when implementing traits for types outside of the crate -> Orphan Rules
+//! https://doc.rust-lang.org/book/ch10-02-traits.html
+//!
+//! Traits are a way to share functionality between different types.
+//! They are implemented with the `impl` keyword.
+//! They can be implemented for any type.
+//! There are certain rules that have to be followed when implementing traits for types outside of the crate -> Orphan Rules
+
 #[test]
 fn traits() {
     use std::ops::Add; // standard library trait for addition `+`
@@ -44,6 +47,7 @@ fn traits() {
     assert_eq!(p3, Point(4.0, 6.0));
 }
 
+/// https://doc.rust-lang.org/book/appendix-03-derivable-traits.html
 /// Traits can be implemented through the `derive` attribute if the trait has a derive macro implemented for it.
 /// This requires that all fields of the type implement the trait as well.
 #[test]

@@ -1,9 +1,10 @@
-// Rust functions are denoted by fn with `()` round brackets
-// for arguments and curly brackets for the body of the function.
-// `->` is used to denote the return type of the function.
-
-// The datatype of the arguments has to be explicitly specified (i32, i64, f32, f64, str, Vec<_> ..)
-// The return type has to be explicitly specified except for the unit type `()`.
+//! Rust functions are denoted by fn with `()` round brackets
+//! for arguments and curly brackets for the body of the function.
+//! 
+//! `->` is used to denote the return type of the function.
+//! 
+//! The datatype of the arguments has to be explicitly specified (i32, i64, f32, f64, str, Vec<_> ..)
+//! The return type has to be explicitly specified except for the unit type `()`.
 
 #[test]
 fn function() {

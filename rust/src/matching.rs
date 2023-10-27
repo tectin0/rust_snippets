@@ -1,7 +1,5 @@
-// Matching is a way to compare a value against a series of patterns and conditionally execute code based on the pattern that matches.
-// Patterns can be made up of literal values, variable names, wildcards, and many other things.
-
-use std::fmt::write;
+//! Matching is a way to compare a value against a series of patterns and conditionally execute code based on the pattern that matches.
+//! Patterns can be made up of literal values, variable names, wildcards, and many other things.
 
 /// Enums are a way to define Variants of a type
 /// They are the typical way type to match against

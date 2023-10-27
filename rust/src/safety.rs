@@ -1,6 +1,7 @@
-/// https://doc.rust-lang.org/nomicon/ownership.html
-/// Rusts ownership system allows for memory safety without garbage collection.
-/// In C you can write invalid code and have it compile without any warnings or errors.
+//! https://doc.rust-lang.org/nomicon/ownership.html
+//!
+//! Rusts ownership system allows for memory safety without garbage collection.
+//! In C you can write invalid code and have it compile without any warnings or errors.
 
 /// The C compiler does not check for uninitialized variables and lets you use them. This can lead to undefined behavior.
 /// Rust will not compile if you try to use an uninitialized variable (and also has useful warnings and potential fixes for the unused variables).
@@ -27,12 +28,16 @@ fn test_c_uninitialized() {
         .opt_level(0)
         .compile("unsafe");
 
-    let num: i32; // uninitialized variable
+    let num: i32; // uninitialized variable -> You can declare variables without initializing them in Rust.
 
-    // println!("The value of num is: {}", num); -> compile error: used binding `num` isn't initialized
+    // println!("The value of num is: {}", num); // -> compile error: used binding `num` isn't initialized
+
+    num = 0; // initialize variable -> But you strictly have to initialize variables in Rust to use them.
+
+    assert!(num == 0);
 }
 
-/// A common mistake in C is to create dangling pointersw hcih point to invalid memory.
+/// A common mistake in C is to create dangling pointers which point to invalid memory.
 /// In this case a function creates an array of integers and returns a pointer of the first element of the array.
 /// The array is deallocated when the function returns and the pointer is now dangling.
 /// The dangling pointer can them be used by another function which leads to undefined behavior.
