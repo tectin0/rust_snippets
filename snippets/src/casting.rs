@@ -1,5 +1,8 @@
-//! Rust provides no implicit type conversion (coercion) between primitive types. But, explicit type conversion (casting) can be performed using the as keyword `as` or `from`.
+//! Rust provides no implicit type conversion (coercion) between primitive types.
+//! But, explicit type conversion (casting) can be performed using the as keyword `as` or `from`.
 
+/// When casting between primitive types with different size, extra care must be taken to avoid overflow.
+/// This can be done by using the `try_from` and `try_into` methods.
 #[test]
 fn casting() {
     let a: i32 = 0;
