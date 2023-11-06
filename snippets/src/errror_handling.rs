@@ -53,6 +53,7 @@ fn error_handling() {
 /// This makes runtime errors in Python harder to debug than in Rust and significanly more common.
 /// In Rust, the compiler will not let you forget to handle an error. In Python, you have to remember to handle the error.
 /// This does make the code more verbose though.
+#[cfg(feature = "python")]
 #[test]
 fn error_handling_vs_python() {
     use indoc::indoc;

@@ -2,6 +2,7 @@
 //! The `cc` crate is an easy way to compile C code into a static library and link it to Rust during the rust build process (see build.rs).
 //! Calling C functions from Rust are inherently unsafe, because Rust can't guarantee that the C code is safe.
 
+#[cfg(feature = "cc")]
 #[test]
 fn extern_c() {
     extern "C" {

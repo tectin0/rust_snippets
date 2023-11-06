@@ -5,6 +5,7 @@
 
 /// The C compiler does not check for uninitialized variables and lets you use them. This can lead to undefined behavior.
 /// Rust will not compile if you try to use an uninitialized variable (and also has useful warnings and potential fixes for the unused variables).
+#[cfg(feature = "cc")]
 #[test]
 fn test_c_uninitialized() {
     /* uninitialized.c
@@ -42,6 +43,7 @@ fn test_c_uninitialized() {
 /// The array is deallocated when the function returns and the pointer is now dangling.
 /// The dangling pointer can them be used by another function which leads to undefined behavior.
 /// The Rust compiler will not let you create dangling pointers. The Ownership system ensures that the memory is not deallocated until the last owner goes out of scope.
+#[cfg(feature = "cc")]
 #[test]
 fn test_c_dangling_pointer() {
     /* dangling_pointer.c

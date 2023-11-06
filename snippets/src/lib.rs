@@ -15,10 +15,12 @@ mod generics;
 mod lifetimes;
 mod macros;
 mod matching;
+#[cfg(feature = "python")]
 mod numpy;
+mod print;
+#[cfg(feature = "python")]
 mod pyo3;
 mod references;
 mod safety;
 mod traits;
 mod variables;
-mod print;

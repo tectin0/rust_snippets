@@ -52,6 +52,7 @@ pub fn test_point_macro() {
     //println!("{:?}", point!(1.0, 1.0, 1.0));  // wrong input types!
 }
 
+#[cfg(feature = "python")]
 #[macro_export]
 macro_rules! pyprint {
     ($($arg:tt)*) => {{
@@ -62,6 +63,7 @@ macro_rules! pyprint {
     }};
 }
 
+#[cfg(feature = "python")]
 #[test]
 pub fn use_pyprint() {
     pyo3::prepare_freethreaded_python();
