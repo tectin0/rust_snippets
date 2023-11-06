@@ -79,6 +79,7 @@ fn expression() {
 }
 
 /// Constant expressions are evaluated at compile time.
+#[allow(unused)]
 #[test]
 fn constant_expression() {
     // literals are constant expressions (numbers, characters, strings, boolean values)
@@ -120,6 +121,8 @@ fn constant_expression() {
 
         i == BS1.len() && j == BS2.len()
     }; // blocks are constant expressions if the last expression is a constant expression
+
+    // constant blocks will be evaluated at compile time
 
     const_assert!(!B);
 

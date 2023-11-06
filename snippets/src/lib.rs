@@ -1,3 +1,9 @@
+//! For more information visit the official rust book:
+//! https://doc.rust-lang.org/book
+//!
+//! You can also try out the Rust Book experiment with interactive quizzes:
+//! https://rust-book.cs.brown.edu/
+
 #[macro_use]
 extern crate static_assertions;
 
@@ -15,3 +21,4 @@ mod references;
 mod safety;
 mod traits;
 mod variables;
+mod print;
